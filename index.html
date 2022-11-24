@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <title>my site</title>
+</head>
+<body>
+    <header>
+        <img src="img/header-logo.gif" alt="site logo">
+        <nav class="menu">
+            <a href="#intro" class="menu_button">кто я??</a>
+            <a href="#my-skills" class="menu_button">навыки</a>
+            <a href="#my-hobbies" class="menu_button">хобби</a>
+            <a href="#gallery" class="menu_button">галерея</a>
+            <a href="#my-works" class="menu_button">работы</a>
+            <a href="#send-form" class="menu_button">написать</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <a name="intro"></a>
+            <div class="wrapper">
+                <div class="intro__top">
+                    <span class="intro__heading headings">
+                        <h1>я никита</h1>
+                    </span>
+                    <span class="intro__text texts">
+                        <p>начинающий веб-разработчик</p>
+                    </span>
+                </div>
+                <div class="intro__middle">
+                    <img src="img/cool-gif.gif" alt="cool gif!!!">
+                </div>
+                <div class="intro__bottom">
+                    <span class="intro__text texts">
+                        <p> 
+                            мне 17 лет, живу в г. Пермь.<br>
+                            если хотите получить крутой, красивый сайт, то тыкните по кнопочке!
+                        </p>
+                    </span>    
+                </div>
+                    <a href="#send-form" class="button"> хочу сайт!!! </a>
+            </div>
+        </section>
+
+        <section class="my-skills">
+            <a name="my-skills"></a>
+            <div class="wrapper">
+                <span class="my-skills__heading headings">
+                    <h3>мои навыки</h3>
+                </span>
+                <div class="skill-set-wrapper">
+                    <article class="skill">
+                        <span class="skill__heading texts">
+                            <h5>HTML</h5>
+                        </span>
+                        <img src="img/logos/html-logo.svg" alt="html logo" class="skill_img">
+                    </article>
+                    <article class="skill">
+                        <span class="skill__heading texts">
+                            <h5>CSS</h5>
+                        </span>
+                        <img src="img/logos/css-logo.svg" alt="css logo" class="skill_img">
+                    </article>
+                    <article class="skill">
+                        <span class="skill__heading texts">
+                            <h5>Java Script</h5>
+                        </span>
+                        <img src="img/logos/js-logo.svg" alt="js logo" class="skill_img">
+                    </article>
+                    <article class="skill">
+                        <span class="skill__heading texts">
+                            <h5>Python</h5>
+                        </span>
+                        <img src="img/logos/python-logo.svg" alt="python logo" class="skill_img">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-hobbies">
+            <a name="my-hobbies"></a>
+            <div class="wrapper">
+                <span class="my-hobbies__heading headings">
+                    <h3>мои хобби</h3>
+                </span>
+                <div class="hobbies-wrapper">
+                    <article class="hobby">
+                        <span class="hobby__heading texts">
+                            <p>программирование</p>
+                        </span>
+                        <img src="img/omputer-gif.gif" alt="gif with computer" class="hobby-img">
+                    </article>
+                    <article class="hobby">
+                        <span class="hobby__heading texts">
+                            <p>просмотр красивых штук</p>
+                        </span>
+                        <video src="video/video.mp4" controls="controls" class="hobby-video"></video>
+                    </article>
+                    <article class="hobby">
+                        <span class="hobby__heading texts">
+                            <p>музыка</p>
+                        </span>
+                        <img src="img/music.gif" alt="blinking lady" class="hobby-img hobby-gif">
+                        <audio src="audio/maroon-5-shiver.mp3" controls="controls" class="hobby-audio"></audio>
+                    </article>
+                    <article class="hobby">
+                        <span class="hobby__heading texts">
+                            <p>коллекционирование картинок котят</p>
+                        </span>
+                        <img src="img/kittens/kitty-for-hobby.jpg" alt="kitty" class="hobby-img">
+                    </article>
+                </div>   
+            </div> 
+        </section>
+
+        <section class="gallery">
+            <a name="gallery"></a>
+            <div class="wrapper">
+                <span class="gallery__heading headings">
+                    <h3>галерея котят</h3>
+                </span>
+                <img src="img/emoji/cat-emoji.png" alt="cat emoji" class="emoji">
+                <div class="gallery-wrapper">
+                    <img src="img/kittens/kitty_1.jpg" alt="" class="gallery__img">
+                    <img src="img/kittens/kitty_2.jpg" alt="" class="gallery__img">
+                    <img src="img/kittens/kitty_3.jpg" alt="" class="gallery__img">
+                    <img src="img/kittens/kitty_4.jpg" alt="" class="gallery__img">
+                    <img src="img/kittens/kitty_5.jpg" alt="" class="gallery__img">
+                    <img src="img/kittens/kitty_6.jpg" alt="" class="gallery__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="my-works">
+            <a name="my-works"></a>
+            <div class="wrapper">
+                <span class="my-works__heading headings">
+                    <h3>мои работы</h3>
+                </span>
+                <span class="my-works__text texts">
+                    <p>верстка сайта школы 146</p>
+                    <p>ссылка кликабельна</p>
+                </span>
+                <div class="works-wrapper">
+                    <a href="https://pnkvnkt.github.io/s146/"><img src="img/work-example.jpg" alt="верстка сайта школы 146" class="works__img"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="send-form">
+            <a name="send-form"></a>
+            <div class="wrapper">
+                <span class="send-form__heading headings">
+                    <h3>
+                        <img src="img/emoji/dog-emoji.png" alt="dog emoji">
+                        Написать мне
+                        <img src="img/emoji/dog-emoji.png" alt="dog emoji">
+                    </h3>
+                </span>
+                <form action="#" class="form">
+                    <input type="text" placeholder="введите свои данные, и напишу вам!! =)" class="input-form"/>
+                    <button type="submit" class="button-form">отправить!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+
+/* === RESET === */
+
+*::after,
+*::before,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* === something === */
+
+body{
+    background-color: #FFFFC2;
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.wrapper{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings{
+    font-family: 'Macondo', cursive;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.texts{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.button{
+    color: #140601;
+    background-color: #FFF988;
+    padding: 10px 60px;
+    border: 2px solid #FBAF23;
+
+    transition: .2s linear;
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.button:hover{
+    opacity: 1;
+    color: black;
+    text-decoration: underline;
+}
+
+.emoji{
+    width: 25px;
+}
+
+/* === HEADER === */
+
+header{
+    background-color: #FFF34D;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu{
+    margin-left: auto;
+}
+
+.menu_button{
+    color: #140601;
+    margin-left: 15px;
+    opacity: 0.8;
+
+    transition: .2s linear;
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.menu_button:first-child{
+    margin-left: 0;
+}
+
+.menu_button:hover{
+    text-decoration: underline;
+    color: black;
+    opacity: 1;
+}
+
+/* === INTRO === */
+
+.intro{
+    text-align: center;
+
+    margin: 100px 0;
+}
+
+.intro__middle img{
+    width: 310px;
+}
+
+.intro__bottom{
+    margin: 30px 0;
+}
+
+.intro__heading{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* === MY SKILLS === */
+
+
+.skill-set-wrapper{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 100px 0;
+}
+
+.skill{
+    text-align: center;
+}
+
+.skill__heading{
+    font-size: 40px;
+}
+
+.my-skills{
+    margin-bottom: 50px;
+}
+
+/* === MY HOBBIES === */
+
+.hobbies-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 100px 0
+}
+
+.hobby{
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobby__heading{
+    text-align: center;
+}
+
+.hobby-img, .hobby-audio, .hobby-video{
+    width: 100%;
+    margin-top: auto;
+}
+
+.hobby-gif{
+    width: 40%;
+}
+
+.hobby-audio{
+    background-color:#FBAF23;
+}
+
+/* === GALLERY === */
+
+.gallery-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.gallery__img{
+    width: calc(100% / 3 - 1% * 2 / 3);
+    margin-bottom: 10px;
+}
+
+.gallery__img:not(:nth-child(3n)){
+    margin-right: 1%;
+}
+
+/* === MY WORKS === */
+
+.works-wrapper{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.works__img{
+    width: 100%;
+}
+
+.works-wrapper a{
+    width: 70%;
+}
+
+.my-works__text{
+    text-align: center;
+}
+
+/* === CONTACT ME === */
+
+.form{
+    width: 100%;
+}
+
+.input-form{
+    width: 40%;
+    height: 300px;
+}
+
+
+
+
+
+
+

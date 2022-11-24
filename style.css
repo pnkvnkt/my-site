@@ -231,16 +231,43 @@ header{
 
 /* === CONTACT ME === */
 
+.form__item{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 20px 15px;
+    border: 0;
+}
+
+ .form__item_input{
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.form__item_input:nth-child(2){
+    margin-right: 0;
+}
+
+.form__item_text{
+    width: 650px;
+    resize: none;
+}
+
 .form{
-    width: 100%;
+    margin: 50px 0;
 }
 
-.input-form{
-    width: 40%;
-    height: 300px;
+.form__button{
+    margin-top: 50px;
 }
 
+/* === FOOTER === */
 
+footer{
+    background-color: #FFF34D;
+    padding: 20px 30px;
+}
 
 
 

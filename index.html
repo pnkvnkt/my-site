@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <img src="img/header-logo.gif" alt="site logo">
+        <img src="img/header-logo.png" alt="site logo">
         <nav class="menu">
             <a href="#intro" class="menu_button">кто я??</a>
             <a href="#my-skills" class="menu_button">навыки</a>
@@ -96,7 +96,7 @@
                         <span class="hobby__heading texts">
                             <p>программирование</p>
                         </span>
-                        <img src="img/omputer-gif.gif" alt="gif with computer" class="hobby-img">
+                        <img src="img/computer-gif.gif" alt="gif with computer" class="hobby-img">
                     </article>
                     <article class="hobby">
                         <span class="hobby__heading texts">
@@ -165,16 +165,29 @@
                         <img src="img/emoji/dog-emoji.png" alt="dog emoji">
                     </h3>
                 </span>
-                <form action="#" class="form">
-                    <input type="text" placeholder="введите свои данные, и напишу вам!! =)" class="input-form"/>
-                    <button type="submit" class="button-form">отправить!</button>
+                <form class="form">
+                    <div class="wrapper">
+                        <div class="wrapper-input">
+                            <input type="text" placeholder="имя" class="form__item form__item_input"/>
+                            <input type="text" placeholder="фамилия" class="form__item form__item_input">
+                        </div>
+                        <textarea class="form__item form__item_text" placeholder="сообщение" cols="30" rows="10"></textarea>
+                        <button class=" button form__button">отправить!</button>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="media">
+            <a id="Telegram"><img src="img/telegram.png" alt="telegram logo"></a>
+            <a id="Git"><img src="img/git.png" alt="git logo"></a>
+            <a id="VK"><img src="img/vk.png" alt="vk logo"></a>
+        </div>
+        <img src="img/pensioner.gif" alt="even i have my own website">
+        <span class="footer-text"><p>by nikita pnkv</p></span>
+        
     </footer>
 </body>
 </html>

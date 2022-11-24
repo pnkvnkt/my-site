@@ -221,10 +221,6 @@ header{
     width: 40%;
 }
 
-.hobby-audio{
-    background-color:#FBAF23;
-}
-
 /* === GALLERY === */
 
 .gallery-wrapper{
@@ -309,6 +305,10 @@ footer{
 .media__logo{
     width: 40px;
     margin-right: 15px;
+}
+
+.footer-logo{
+    border: 4px solid #FBAF23;
 }
 
 /* === MEDIA === */

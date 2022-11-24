@@ -27,7 +27,7 @@ body{
 }
 
 .wrapper{
-    width: 1100px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
 
@@ -72,6 +72,28 @@ body{
 .emoji{
     width: 25px;
 }
+
+/* ===== MEDIA FOR TEXT===== */
+
+@media (max-width: 900px){
+    .texts{
+        font-size: 20px;
+    } 
+}
+
+@media (max-width: 680px){
+
+    .texts{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    .headings{
+        font-size: 27px;
+    }
+}
+
 
 /* === HEADER === */
 
@@ -138,8 +160,8 @@ header{
 
 
 .skill-set-wrapper{
-    width: 1100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     margin: 100px 0;
@@ -147,6 +169,13 @@ header{
 
 .skill{
     text-align: center;
+
+    margin-right: calc(100px / 3);
+    width: calc((100% - 100px) / 4);
+}
+
+.skill:nth-child(4){
+    margin-right: 0;
 }
 
 .skill__heading{
@@ -155,6 +184,10 @@ header{
 
 .my-skills{
     margin-bottom: 50px;
+}
+
+.skill_img{
+    width: 100%;
 }
 
 /* === MY HOBBIES === */
@@ -212,9 +245,9 @@ header{
 /* === MY WORKS === */
 
 .works-wrapper{
-    margin: 100px 0;
     display: flex;
     justify-content: center;
+    margin: 100px 0;
 }
 
 .works__img{
@@ -269,7 +302,205 @@ footer{
     padding: 20px 30px;
 }
 
+.media{
+    margin: 20px 0;
+}
 
+.media__logo{
+    width: 40px;
+    margin-right: 15px;
+}
+
+/* === MEDIA === */
+
+@media (max-width: 1100px){
+    .wrapper{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 680px){
+
+    /* === HEADER === */
+
+    .menu{
+        display: none;
+    }
+
+    .menu_mobile{
+        margin-left: auto;
+
+        padding: 10px 0;
+    }
+
+    .menu_mobile:hover{
+        cursor: pointer;
+    }
+
+    .burger-menu{
+        width: 35px;
+        height: 4px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .burger-menu::after,
+    .burger-menu::before{
+        content: '';
+        width: 35px;
+        height: 4px;
+        position: absolute;
+        background-color: #fff;
+    }
+
+    .burger-menu::after{
+        top: -8px;
+        left: 0;
+    }
+    .burger-menu::before{
+        bottom: -8px;
+        left: 0;
+    }
+
+    /* === INTRO === */
+
+    .intro__text{
+        font-size: 25px;
+    }
+
+    /* === SKILLS === */
+
+    .skill__heading{
+        font-size: 30px;
+    }
+
+    /* === MY HOBBIES === */
+
+    .hobby-gif{
+        width: 80%;
+    }
+
+    /* === CONTACT ME === */
+
+    .form__item_input{
+        width: 45%;
+        margin-right:9%;
+    }
+
+    .form__item_text {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 480px){
+
+    /* === TEXTS === */
+
+    .texts{
+        font-size: 20px;
+    }
+
+    /* === MY SKILLS === */
+
+    .skill{
+        text-align: center;
+    
+        margin-right: 20px;
+        width: calc((100% - 20px) / 2);
+    }
+    
+    .skill:nth-child(2n){
+        margin-right: 0;
+    }
+
+    /* === MY HOBBIES === */
+
+    .hobby{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    /* === INTRO === */
+
+    .intro__text{
+        font-size: 25px;
+    }
+
+    /* === SKILLS === */
+
+    .skill__heading{
+        font-size: 30px;
+    }
+
+    /* === MY HOBBIES === */
+
+    .hobby-gif{
+        width: 100%;
+    }
+
+    /* === GALLERY === */
+
+    .gallery-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery__img{
+        width: calc(100% / 2 - 3%);
+        margin-bottom: 10px;
+    }
+
+    .gallery__img:not(:nth-child(2n)){
+        margin-right: 3%;
+    }
+
+    /* === MY WORKS === */ 
+
+    .works-wrapper a{
+        width: 90%;
+    }
+
+    /* === MARGIN between blocks === */
+
+    /* INTRO */
+
+    .intro{
+        margin: 30px 0;
+    }
+
+    /* MY SKILLS */
+
+    .skill-set-wrapper{
+        margin: 30px 0;
+    }
+
+    /* === MY HOBBIES === */
+
+    .hobbies-wrapper{
+        margin: 30px 0
+    }
+
+    /* === GALLERY === */
+
+    .gallery-wrapper{
+        margin: 30px 0;
+    }
+
+    /* === MY WORKS === */
+
+    .works-wrapper{
+        margin: 30px 0;
+    }
+
+    /* === CONTACT ME === */
+
+    .form{
+        margin: 30px 0;
+    }
+
+}
 
 
 

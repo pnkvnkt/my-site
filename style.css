@@ -156,30 +156,6 @@ header{
     font-weight: 800;
 }
 
-/* === MY WORKS === */
-
-.works-wrapper{
-    display: flex;
-    justify-content: center;
-    margin: 100px 0;
-    flex-wrap: wrap;
-}
-
-.works__img{
-    width: 100%;
-}
-
-.works-wrapper a{
-    width: 70%;
-}
-
-.my-works__text{
-    text-align: center;
-}
-
-.work-item{
-    margin-bottom: 40px;
-}
 /* === CONTACT ME === */
 
 .form__item{
